@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls -la \"\\\\\\\\wsl.localhost\\\\Ubuntu-22.04\\\\home\\\\chino\\\\uvix_ws\")",
+      "Bash(cd \"\\\\\\\\wsl.localhost\\\\Ubuntu-22.04\\\\home\\\\chino\\\\uvix_ws\")",
+      "Bash(cd \"\\\\\\\\wsl.localhost\\\\Ubuntu-22.04\\\\home\\\\chino\\\\uvix_ws\\\\src\")",
+      "Read(///wsl.localhost/Ubuntu-22.04//**)"
+    ]
+  }
+}

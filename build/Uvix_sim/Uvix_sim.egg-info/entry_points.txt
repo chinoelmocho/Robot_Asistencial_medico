@@ -1,4 +1,0 @@
-[console_scripts]
-gazebo_ready_watcher = Uvix_sim.GazeboReadyWatcher:main
-slam_prereq_checker = Uvix_sim.Chek_time:main
-

@@ -1,1 +1,0 @@
-/home/chino/uvix_ws/src/Uvix_sim/launch/test_mundo.launch.py
