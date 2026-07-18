@@ -21,8 +21,6 @@ Workspace de **ROS 2** con la simulación de un robot móvil de asistencia hospi
 
 
 
-> Reemplaza cada `_(imagen pendiente)_` por `![descripción](docs/media/archivo.png)` una vez tengas las capturas.
-
 ---
 
 ## Estructura del workspace
