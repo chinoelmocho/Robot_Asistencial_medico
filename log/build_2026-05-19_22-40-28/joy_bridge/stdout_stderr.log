@@ -1,0 +1,22 @@
+running develop
+running egg_info
+creating joy_bridge.egg-info
+writing joy_bridge.egg-info/PKG-INFO
+writing dependency_links to joy_bridge.egg-info/dependency_links.txt
+writing entry points to joy_bridge.egg-info/entry_points.txt
+writing requirements to joy_bridge.egg-info/requires.txt
+writing top-level names to joy_bridge.egg-info/top_level.txt
+writing manifest file 'joy_bridge.egg-info/SOURCES.txt'
+reading manifest file 'joy_bridge.egg-info/SOURCES.txt'
+writing manifest file 'joy_bridge.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/chino/uvix_ws/install/joy_bridge/lib/python3.10/site-packages/joy-bridge.egg-link (link to .)
+Installing joy_udp script to /home/chino/uvix_ws/install/joy_bridge/lib/joy_bridge
+
+Installed /home/chino/uvix_ws/build/joy_bridge
+running symlink_data
+creating /home/chino/uvix_ws/install/joy_bridge/share/ament_index
+creating /home/chino/uvix_ws/install/joy_bridge/share/ament_index/resource_index
+creating /home/chino/uvix_ws/install/joy_bridge/share/ament_index/resource_index/packages
+symbolically linking /home/chino/uvix_ws/build/joy_bridge/resource/joy_bridge -> /home/chino/uvix_ws/install/joy_bridge/share/ament_index/resource_index/packages
+symbolically linking /home/chino/uvix_ws/build/joy_bridge/package.xml -> /home/chino/uvix_ws/install/joy_bridge/share/joy_bridge

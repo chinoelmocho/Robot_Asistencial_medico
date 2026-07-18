@@ -1,0 +1,21 @@
+[5.655s] Invoking command in '/home/chino/uvix_ws/src/joy_bridge': PYTHONPATH=/home/chino/uvix_ws/build/joy_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/chino/uvix_ws/install/joy_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/joy_bridge build --build-base /home/chino/uvix_ws/build/joy_bridge/build install --record /home/chino/uvix_ws/build/joy_bridge/install.log --single-version-externally-managed install_data
+[7.047s] running egg_info
+[7.052s] writing ../../build/joy_bridge/joy_bridge.egg-info/PKG-INFO
+[7.061s] writing dependency_links to ../../build/joy_bridge/joy_bridge.egg-info/dependency_links.txt
+[7.062s] writing entry points to ../../build/joy_bridge/joy_bridge.egg-info/entry_points.txt
+[7.064s] writing requirements to ../../build/joy_bridge/joy_bridge.egg-info/requires.txt
+[7.065s] writing top-level names to ../../build/joy_bridge/joy_bridge.egg-info/top_level.txt
+[7.071s] reading manifest file '../../build/joy_bridge/joy_bridge.egg-info/SOURCES.txt'
+[7.074s] writing manifest file '../../build/joy_bridge/joy_bridge.egg-info/SOURCES.txt'
+[7.075s] running build
+[7.075s] running build_py
+[7.077s] running install
+[7.078s] running install_lib
+[7.082s] running install_data
+[7.083s] running install_egg_info
+[7.088s] removing '/home/chino/uvix_ws/install/joy_bridge/lib/python3.10/site-packages/joy_bridge-0.0.0-py3.10.egg-info' (and everything under it)
+[7.092s] Copying ../../build/joy_bridge/joy_bridge.egg-info to /home/chino/uvix_ws/install/joy_bridge/lib/python3.10/site-packages/joy_bridge-0.0.0-py3.10.egg-info
+[7.107s] running install_scripts
+[7.197s] Installing joy_udp script to /home/chino/uvix_ws/install/joy_bridge/lib/joy_bridge
+[7.199s] writing list of installed files to '/home/chino/uvix_ws/build/joy_bridge/install.log'
+[7.340s] Invoked command in '/home/chino/uvix_ws/src/joy_bridge' returned '0': PYTHONPATH=/home/chino/uvix_ws/build/joy_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/chino/uvix_ws/install/joy_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/joy_bridge build --build-base /home/chino/uvix_ws/build/joy_bridge/build install --record /home/chino/uvix_ws/build/joy_bridge/install.log --single-version-externally-managed install_data

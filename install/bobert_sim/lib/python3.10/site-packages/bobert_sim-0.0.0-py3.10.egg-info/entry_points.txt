@@ -1,0 +1,4 @@
+[console_scripts]
+gazebo_ready_watcher = bobert_sim.GazeboReadyWatcher:main
+slam_prereq_checker = bobert_sim.Chek_time:main
+

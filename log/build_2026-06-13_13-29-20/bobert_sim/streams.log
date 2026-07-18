@@ -1,0 +1,22 @@
+[5.652s] Invoking command in '/home/chino/uvix_ws/src/bobert_sim': PYTHONPATH=/home/chino/uvix_ws/build/bobert_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/chino/uvix_ws/install/bobert_sim/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/bobert_sim build --build-base /home/chino/uvix_ws/build/bobert_sim/build install --record /home/chino/uvix_ws/build/bobert_sim/install.log --single-version-externally-managed install_data
+[7.049s] running egg_info
+[7.053s] writing ../../build/bobert_sim/bobert_sim.egg-info/PKG-INFO
+[7.057s] writing dependency_links to ../../build/bobert_sim/bobert_sim.egg-info/dependency_links.txt
+[7.058s] writing entry points to ../../build/bobert_sim/bobert_sim.egg-info/entry_points.txt
+[7.059s] writing requirements to ../../build/bobert_sim/bobert_sim.egg-info/requires.txt
+[7.060s] writing top-level names to ../../build/bobert_sim/bobert_sim.egg-info/top_level.txt
+[7.088s] reading manifest file '../../build/bobert_sim/bobert_sim.egg-info/SOURCES.txt'
+[7.108s] writing manifest file '../../build/bobert_sim/bobert_sim.egg-info/SOURCES.txt'
+[7.110s] running build
+[7.110s] running build_py
+[7.111s] running install
+[7.113s] running install_lib
+[7.119s] running install_data
+[7.172s] running install_egg_info
+[7.180s] removing '/home/chino/uvix_ws/install/bobert_sim/lib/python3.10/site-packages/bobert_sim-0.0.0-py3.10.egg-info' (and everything under it)
+[7.184s] Copying ../../build/bobert_sim/bobert_sim.egg-info to /home/chino/uvix_ws/install/bobert_sim/lib/python3.10/site-packages/bobert_sim-0.0.0-py3.10.egg-info
+[7.193s] running install_scripts
+[7.283s] Installing gazebo_ready_watcher script to /home/chino/uvix_ws/install/bobert_sim/lib/bobert_sim
+[7.284s] Installing slam_prereq_checker script to /home/chino/uvix_ws/install/bobert_sim/lib/bobert_sim
+[7.289s] writing list of installed files to '/home/chino/uvix_ws/build/bobert_sim/install.log'
+[7.546s] Invoked command in '/home/chino/uvix_ws/src/bobert_sim' returned '0': PYTHONPATH=/home/chino/uvix_ws/build/bobert_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/chino/uvix_ws/install/bobert_sim/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/bobert_sim build --build-base /home/chino/uvix_ws/build/bobert_sim/build install --record /home/chino/uvix_ws/build/bobert_sim/install.log --single-version-externally-managed install_data

@@ -1,0 +1,336 @@
+<?xml version="1.0" ?>
+<robot name="uvix" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find Uvix_sim)/urdf/materials.xacro" />
+<xacro:include filename="$(find Uvix_sim)/urdf/uvix.gazebo" />
+
+
+
+
+    
+    <link name="camera_obstacle_link">
+        <inertial>
+            <origin xyz="0.014144011987316888 0.00010420293547742567 8.861740813211228e-05" rpy="0.0 -1.5707963267948966 3.141592653589793" />
+            <mass value="0.5118874748287616" />
+            <inertia ixx="0.0006200482265848869" iyy="5.421794795083812e-05" izz="0.0006112176099345723" ixy="6.194367015504388e-08" iyz="2.0960140681541992e-07" ixz="1.576623303185858e-07" />
+        </inertial>
+        <visual name="Camara_1-v4_visual">
+            <origin xyz="0.026000000000000016 -1.507071568235263e-11 -4.525717773873339e-09" rpy="1.5707963267948966 0.0 1.5707963267948966" />
+            <geometry>
+                <mesh filename="package://Uvix_sim/meshes/Camara_1-v4.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Camara_1-v4_collision">
+            <origin xyz="0.026000000000000016 -1.507071568235263e-11 -4.525717773873339e-09" rpy="1.5707963267948966 0.0 1.5707963267948966" />
+            <geometry>
+                <mesh filename="package://Uvix_sim/meshes/Camara_1-v4.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+
+
+
+    <link name="base_link">
+        <inertial>
+            <origin xyz="6.755567704632166e-05 0.007002207854589212 0.32574728760802585" rpy="0.0 0.0 0.0" />
+            <mass value="48.201666559625814" />
+            <inertia ixx="6.116851439064999" iyy="6.040824438947507" izz="1.2690616919691324" ixy="0.00039186748668920446" iyz="0.05126652680484137" ixz="-0.00016482533694285747" />
+        </inertial>
+        <visual name="Cuerpo_robot-v4_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="package://Uvix_sim/meshes/base_link.dae" scale="1 1 1" />
+            </geometry>
+        </visual>
+        <collision name="Cuerpo_robot-v4_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="package://Uvix_sim/meshes/Cuerpo_robot-v4.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="camera_recognition_link">
+        <inertial>
+            <origin xyz="0.0001042023730662893 8.861969974702789e-05 0.014144008083733013" rpy="0.0 -0.0 0.0" />
+            <mass value="0.5118874748287616" />
+            <inertia ixx="5.4217947951240575e-05" iyy="0.0006112176099345766" izz="0.0006200482265852347" ixy="2.0960140681544528e-07" iyz="1.576623303023439e-07" ixz="6.194367015505151e-08" />
+        </inertial>
+        <visual name="Camara_2-v2_visual">
+            <origin xyz="-5.774818520498566e-10 -2.2341029648487164e-09 0.025999996096416157" rpy="0.0 -0.0 0.0" />
+            <geometry>
+                <mesh filename="package://Uvix_sim/meshes/Camara_2-v2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Camara_2-v2_collision">
+            <origin xyz="-5.774818520498566e-10 -2.2341029648487164e-09 0.025999996096416157" rpy="0.0 -0.0 0.0" />
+            <geometry>
+                <mesh filename="package://Uvix_sim/meshes/Camara_2-v2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+
+
+   <link name="lidar_link">
+        <inertial>
+            <origin xyz="-0.0002570483300919576 0.0009341184727086471 -0.0109147910869174" rpy="0.0 -0.0 0.0" />
+            <mass value="0.21035468114805506" />
+            <inertia ixx="9.823313754228451e-05" iyy="9.826688891626315e-05" izz="0.0001391835049767429" ixy="-4.2463230443328404e-08" iyz="-2.4022838503541186e-06" ixz="6.493055851642728e-07" />
+        </inertial>
+        <visual name="LIDAR-v5_visual">
+            <origin xyz="-0.02726530026270679 0.0 -0.01585191011235956" rpy="1.5707963267948966 -0.0 3.141592653589793" />
+            <geometry>
+                <mesh filename="package://Uvix_sim/meshes/LIDAR-v5.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="LIDAR-v5_collision">
+            <origin xyz="-0.02726530026270679 0.0 -0.01585191011235956" rpy="1.5707963267948966 -0.0 3.141592653589793" />
+            <geometry>
+                <mesh filename="package://Uvix_sim/meshes/LIDAR-v5.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+
+
+    
+    <link name="rear_road_link">
+        <inertial>
+            <origin xyz="-0.01414999791807042 -1.4210854715202004e-16 -9.396927680427325e-15" rpy="0.0 -0.0 0.0" />
+            <mass value="0.17546184937798992" />
+            <inertia ixx="2.9423922378584745e-05" iyy="2.464232134401917e-05" izz="2.4642321347374124e-05" ixy="-1.122318655111948e-20" iyz="-2.168404344971009e-19" ixz="-2.0434669852509996e-20" />
+        </inertial>
+        <visual name="road_left-v3_visual">
+            <origin xyz="-0.014149997918070414 -1.509903313490213e-16 9.414691248821328e-16" rpy="-3.141592653589793 -1.5707963267948966 0" />
+            <geometry>
+                <mesh filename="package://Uvix_sim/meshes/road_left-v3.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="road_left-v3_collision">
+            <origin xyz="-0.014149997918070414 -1.509903313490213e-16 9.414691248821328e-16" rpy="-3.141592653589793 -1.5707963267948966 0" />
+            <geometry>
+                <mesh filename="package://Uvix_sim/meshes/road_left-v3.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="rear_caster_link">
+        <inertial>
+            <origin xyz="-4.0762827435567774e-08 0.008883206454493902 -0.01444626058256114" rpy="0.0 -0.0 0.0" />
+            <mass value="0.210872312892764" />
+            <inertia ixx="9.649552760798707e-05" iyy="7.966891161717234e-05" izz="0.00011210414142136423" ixy="1.5657860382919758e-10" iyz="2.7438068639806584e-05" ixz="-3.065752554246311e-10" />
+        </inertial>
+        <visual name="rotatori_suport_left-v3_visual">
+            <origin xyz="1.1990408665951694e-16 -9.414691248821328e-16 -1.4654943925052067e-16" rpy="-6.909525286429603e-19 6.909525286434498e-19 1.5707963267948966" />
+            <geometry>
+                <mesh filename="package://Uvix_sim/meshes/rotatori_suport_left-v3.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="rotatori_suport_left-v3_collision">
+            <origin xyz="1.1990408665951694e-16 -9.414691248821328e-16 -1.4654943925052067e-16" rpy="-6.909525286429603e-19 6.909525286434498e-19 1.5707963267948966" />
+            <geometry>
+                <mesh filename="package://Uvix_sim/meshes/rotatori_suport_left-v3.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="front_caster_link">
+        <inertial>
+            <origin xyz="4.0762827406934474e-08 0.008883203927308951 0.014446260582561132" rpy="0.0 -0.0 0.0" />
+            <mass value="0.210872312892764" />
+            <inertia ixx="9.649552760798621e-05" iyy="7.966891161717229e-05" izz="0.00011210414142136379" ixy="-1.565786038312769e-10" iyz="-2.7438068639806584e-05" ixz="-3.0657525545000957e-10" />
+        </inertial>
+        <visual name="rotatori_suport_rigth-v3_visual">
+            <origin xyz="-1.529332216421153e-16 -2.52718589166534e-09 1.3322676295501878e-16" rpy="3.141592653589793 -0.0 1.5707963267948966" />
+            <geometry>
+                <mesh filename="package://Uvix_sim/meshes/rotatori_suport_rigth-v3.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="rotatori_suport_rigth-v3_collision">
+            <origin xyz="-1.529332216421153e-16 -2.52718589166534e-09 1.3322676295501878e-16" rpy="3.141592653589793 -0.0 1.5707963267948966" />
+            <geometry>
+                <mesh filename="package://Uvix_sim/meshes/rotatori_suport_rigth-v3.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="front_road_link">
+        <inertial>
+            <origin xyz="0.01414999791807039 1.0187406473960437e-14 -2.52718589166534e-09" rpy="0.0 -0.0 0.0" />
+            <mass value="0.17546184937798992" />
+            <inertia ixx="2.9423922378587347e-05" iyy="2.4642321347373257e-05" izz="2.464232134402112e-05" ixy="-2.0699367648526965e-20" iyz="2.168404344971009e-19" ixz="-1.1487884347136448e-20" />
+        </inertial>
+        <visual name="road_rigth-v3_visual">
+            <origin xyz="0.014149997918070385 -1.4210854715202004e-16 -2.52718589166534e-09" rpy="1.5707963267948966 -6.123233995736766e-17 -1.5707963267948966" />
+            <geometry>
+                <mesh filename="package://Uvix_sim/meshes/road_rigth-v3.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="road_rigth-v3_collision">
+            <origin xyz="0.014149997918070385 -1.4210854715202004e-16 -2.52718589166534e-09" rpy="1.5707963267948966 -6.123233995736766e-17 -1.5707963267948966" />
+            <geometry>
+                <mesh filename="package://Uvix_sim/meshes/road_rigth-v3.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="wheel_right_link">
+        <inertial>
+            <origin xyz="0.00017525150306840266 -0.0010633713920903223 0.03261677282367455" rpy="0.0 -0.0 0.0" />
+            <mass value="1.2422735614174052" />
+            <inertia ixx="0.003104586387314111" iyy="0.0031056511748626947" izz="0.005682117374434708" ixy="-4.73203307927689e-09" iyz="-3.082487124802418e-07" ixz="4.513156486221214e-08" />
+        </inertial>
+        <visual name="Rueda_derecha-v3_visual">
+            <origin xyz="0.00017667061984181132 -0.000921571184723481 0.06218902258233156" rpy="3.1415926535897927 -2.7755575615628914e-17 0.0" />
+            <geometry>
+                <mesh filename="package://Uvix_sim/meshes/Rueda_derecha-v3.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Rueda_derecha-v3_collision">
+            <origin xyz="0.00017667061984181132 -0.000921571184723481 0.06218902258233156" rpy="3.1415926535897927 -2.7755575615628914e-17 0.0" />
+            <geometry>
+                <mesh filename="package://Uvix_sim/meshes/Rueda_derecha-v3.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="wheel_left_link">
+        <inertial>
+            <origin xyz="-1.6933609205355836e-07 0.0001504367194997216 -0.0326371402780072" rpy="0.0 -0.0 0.0" />
+            <mass value="1.2428598988418726" />
+            <inertia ixx="0.003104176106955056" iyy="0.003105167173703703" izz="0.005682365353982008" ixy="-3.7023688130492803e-09" iyz="-2.5816899894612723e-08" ixz="2.599725155754197e-09" />
+        </inertial>
+        <visual name="Rueda_izquierda-v2_visual">
+            <origin xyz="2.9387383022119896e-17 0.0002000013709067948 -0.20348493188418867" rpy="-3.141592653589793 7.395570986446986e-32 3.141592653589793" />
+            <geometry>
+                <mesh filename="package://Uvix_sim/meshes/Rueda_izquierda-v2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Rueda_izquierda-v2_collision">
+            <origin xyz="2.9387383022119896e-17 0.0002000013709067948 -0.20348493188418867" rpy="-3.141592653589793 7.395570986446986e-32 3.141592653589793" />
+            <geometry>
+                <mesh filename="package://Uvix_sim/meshes/Rueda_izquierda-v2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="imu_link"/>
+    <link name="base_footprint"/>
+
+
+
+
+
+    
+    <joint name="base_link_camera_obstacle_joint" type="fixed">
+        <origin xyz="0.0002 -0.19899999999999998 0.0895"
+                rpy="0 0 -1.5707963267948966" />
+        <parent link="base_link" />
+        <child link="camera_obstacle_link" />
+    </joint>
+        
+    <joint name="base_link_camera_interact_joint" type="fixed">
+        <origin xyz="1e-08 -0.09119127 1.31127916" rpy="1.5707963267948966 -0.0 0.0" />
+        <parent link="base_link" />
+        <child link="camera_recognition_link" />
+    </joint>
+    <joint name="base_link_lidar_joint" type="fixed">
+        <origin xyz="0.0 -0.177 0.205" rpy="0.0 -0.0 -1.5707963267948966192313216916398" />
+        <parent link="base_link" />
+        <child link="lidar_link" />
+    </joint>
+    <joint name="base_link_rear_caster_joint" type="continuous">
+        <origin xyz="0.0 0.122 -0.03" rpy="-4.179993756677534e-18 -0.0 0.0" />
+        <parent link="base_link" />
+        <child link="rear_caster_link" />
+        <axis xyz="0.0 -4.179993756677534e-18 1.0" />
+    </joint>
+    <joint name="base_link_front_caster_joint" type="continuous">
+        <origin xyz="0.0 -0.12202496 -0.03" rpy="3.141592653589793 -0.0 0.0" />
+        <parent link="base_link" />
+        <child link="front_caster_link" />
+        <axis xyz="-0.0 0.0 1.0" />
+    </joint>
+    <joint name="rear_caster_link_rear_road_joint" type="continuous">
+        <origin xyz="0.014137250000000011 0.025 -0.0455" rpy="1.5707963267948966 -1.4068156275916847e-53 3.365592652726571e-36" />
+        <parent link="rear_caster_link" />
+        <child link="rear_road_link" />
+        <axis xyz="1.0 0.0 -3.3655926527265695e-36" />
+    </joint>
+    <joint name="front_caster_link_front_road_joint" type="continuous">
+        <origin xyz="-0.014137249999999999 0.025 0.0455" rpy="-1.5707963267948966 -0.0 0.0" />
+        <parent link="front_caster_link" />
+        <child link="front_road_link" />
+        <axis xyz="-1.0 0.0 0.0" />
+    </joint>
+    <joint name="base_link_wheel_right_joint" type="continuous">
+        <origin xyz="-0.2 0.0 0.0" rpy="-3.141592653589793 -1.5707963267948966 0" />
+        <parent link="base_link" />
+        <child link="wheel_right_link" />
+        <axis xyz="0.0 0.0 1.0" />
+    </joint>
+    <joint name="base_link_wheel_left_joint" type="continuous">
+        <origin xyz="0.19999999 0.0 0.0" rpy="-3.141592653589793 -1.5707963267948966 0" />
+        <parent link="base_link" />
+        <child link="wheel_left_link" />
+        <axis xyz="0.0 0.0 1.0" />
+    </joint>
+    <joint name="base_link_footprint_joint" type="fixed">
+        <parent link="base_footprint"/>
+        <child link="base_link"/>
+        <origin xyz="0 0 0.038" rpy="0 0 0"/>
+    </joint>
+    <joint name="base_link_imu_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="imu_link"/>
+        <origin xyz="0 0 0.00" rpy="0 0 0"/>
+    </joint>
+
+
+
+
+
+
+
+
+
+    <ros2_control name="BobertGazeboSystem" type="system">
+        <hardware>
+            <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+        </hardware>
+
+        <!-- Ruedas de tracción — igual que antes -->
+        <joint name="base_link_wheel_right_joint">
+            <command_interface name="velocity">
+            <param name="min">-10.0</param>
+            <param name="max">10.0</param>
+            </command_interface>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+        <joint name="base_link_wheel_left_joint">
+            <command_interface name="velocity">
+            <param name="min">-10.0</param>
+            <param name="max">10.0</param>
+            </command_interface>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+
+        <!-- Castors — solo state, sin command (ruedas libres) -->
+        <joint name="base_link_front_caster_joint">
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+        <joint name="base_link_rear_caster_joint">
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+        <joint name="front_caster_link_front_road_joint">
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+        <joint name="rear_caster_link_rear_road_joint">
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+    </ros2_control>
+
+
+
+
+
+
+</robot>
