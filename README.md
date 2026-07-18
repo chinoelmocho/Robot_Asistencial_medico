@@ -17,11 +17,9 @@ Workspace de **ROS 2** con la simulación de un robot móvil de asistencia hospi
 
 | Simulación en Gazebo | Mapeo SLAM en RViz |
 |:---:|:---:|
-| _![descripción](images/gazebo.jpg)_ | _(imagen pendiente)_ |
+| ![descripción](images/gazebo.jpg) | ![descripción](images/rviz.png) |
 
-| Robot en el mundo hospital | Teleoperación por joystick |
-|:---:|:---:|
-| _(imagen pendiente)_ | _(imagen pendiente)_ |
+
 
 > Reemplaza cada `_(imagen pendiente)_` por `![descripción](docs/media/archivo.png)` una vez tengas las capturas.
 
